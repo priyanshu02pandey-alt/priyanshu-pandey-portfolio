@@ -1,1 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Priyanshu Pandey • Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b1220" />
+</head>
+
+<body>
+  <!-- Loader -->
+<div id="loader">
+  <div class="orb"></div>
+</div>
+
+  <!-- Ambient background layers -->
+  <div class="bg">
+    <div class="gradient"></div>
+    <canvas id="particles"></canvas>
+    <div class="noise"></div>
+  </div>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Top Nav -->
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand-dot"></span>
+      <span>Priyanshu Pandey</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="menu" id="menuBtn" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <aside class="drawer" id="drawer">
+    <a href="#about" class="drawer-link">About</a>
+    <a href="#projects" class="drawer-link">Projects</a>
+    <a href="#skills" class="drawer-link">Skills</a>
+    <a href="#contact" class="drawer-link">Contact</a>
+  </aside>
+  <div class="backdrop" id="backdrop"></div>
+
+  <main class="wrap" id="home">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left reveal">
+        <div class="pill">
+          <span class="pulse"></span>
+          My Portfolio
+        </div>
+
+        <h1 class="title">
+          Priyanshu <span class="shine">Pandey</span>
+        </h1>
+
+        <p class="subtitle">
+          <span class="typing" id="typing"></span>
+          <span class="caret">|</span>
+        </p>
+
+        <p class="desc">
+          <b>Computer Science Engineer</b> • <b>MBA Business Analytics</b><br/>
+          Building AI products, analytics systems, and full-stack experiences that feel futuristic.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary magnetic" href="#projects">View Projects</a>
+          <a class="btn ghost magnetic" href="#contact">Connect</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat glass">
+            <div class="stat-num">3+</div>
+            <div class="stat-label">Major Projects</div>
+          </div>
+          <div class="stat glass">
+            <div class="stat-num">AI</div>
+            <div class="stat-label">Healthbot • Fraud • Vision</div>
+          </div>
+          <div class="stat glass">
+            <div class="stat-num">Next</div>
+            <div class="stat-label">Level UI/UX</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="pf-card tilt glass">
+          <div class="pf-top">
+            <div class="pf-ring"></div>
+            <img
+              class="pf-img"
+              src="./single_photo_1769275783539-2pvie1.png"
+              alt="Priyanshu Pandey"
+            />
+          </div>
+
+          <div class="pf-bottom">
+            <div class="pf-name">Priyanshu Pandey</div>
+           
+
+            <div class="pf-tags">
+              <span>AI</span><span>Analytics</span><span>Full-Stack</span><span>Computer Vision</span>
+            </div>
+
+            <a class="btn mini primary magnetic" href="#contact">
+              Call: 9310098474
+            </a>
+          </div>
+        </div>
+
+        <div class="floating-chip glass">
+          <span class="spark"></span>
+          <span>Scroll for the wow ✨</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-head reveal">
+        <h2>About</h2>
+        <p>High-impact engineering meets business intelligence.</p>
+      </div>
+
+      <div class="grid two">
+        <div class="glass card reveal">
+          <h3>Who am I ?</h3>
+          <p>
+            I did B.Tech. in <b></b> <b>Computer Science Engineering and currently</b> pursuing
+            <b>MBA Business Analytics</b>. I build intelligent systems that are practical,
+            scalable, and visually premium. My native roots are from Kanpur Uttar Pradesh, India, I like to play console based games and currently wating for Forza 6
+          </p>
+          <div class="mini-list">
+            <div class="mini-item"><span class="dot"></span>AI + Product mindset</div>
+            <div class="mini-item"><span class="dot"></span>Data-driven decisions</div>
+            <div class="mini-item"><span class="dot"></span>Clean, modern UI/UX</div>
+          </div>
+        </div>
+
+        <div class="glass card reveal">
+          <h3>Focus Areas</h3>
+          <div class="chips">
+            <span class="chip">Business Analytics</span>
+            <span class="chip">Fraud Detection</span>
+            <span class="chip">Computer Vision</span>
+            <span class="chip">Healthcare Tech</span>
+            <span class="chip">Automation</span>
+            <span class="chip">AI Chatbots</span>
+          </div>
+
+          <div class="timeline">
+            <div class="t-item">
+              <div class="t-bullet"></div>
+              <div>
+                <div class="t-title">Computer Science Engineer</div>
+                <div class="t-sub">Engineering foundations + AI/ML</div>
+              </div>
+            </div>
+            <div class="t-item">
+              <div class="t-bullet"></div>
+              <div>
+                <div class="t-title">MBA Business Analytics</div>
+                <div class="t-sub">Strategy + analytics + business impact</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <h2>Projects</h2>
+        <p>Flagship work — built for real outcomes.</p>
+      </div>
+
+      <div class="grid three">
+        <!-- Project 1 -->
+        <article class="project glass card tilt reveal">
+          <div class="project-top">
+            <div class="badge">Healthcare • 3D + AI</div>
+            <h3>Hospital Application: 3D Navigation + AI Healthbot</h3>
+            <p>
+              Developed a hospital application having a <b>3D navigation feature</b> and an
+              <b>AI healthbot</b> that can give advice and <b>book appointments & tests automatically</b>.
+            </p>
+          </div>
+          <div class="project-points">
+            <div><span>⚡</span> Smart routing inside complex hospital layouts</div>
+            <div><span>🤖</span> AI healthbot for guidance & automation</div>
+            <div><span>🧪</span> Auto booking for tests/appointments</div>
+          </div>
+          <div class="project-actions">
+            <button class="btn ghost magnetic" data-modal="p1">Details</button>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project glass card tilt reveal">
+          <div class="project-top">
+            <div class="badge">FinTech • ML</div>
+            <h3>Credit Card Fraud Detection</h3>
+            <p>
+              Detects fraud in credit card transactions using <b>past data</b>,
+              improving safety and reducing financial risk.
+            </p>
+          </div>
+          <div class="project-points">
+            <div><span>🧠</span> Pattern learning from historical transactions</div>
+            <div><span>🔎</span> Flags suspicious behavior with confidence</div>
+            <div><span>📈</span> Supports model evaluation & tuning</div>
+          </div>
+          <div class="project-actions">
+            <button class="btn ghost magnetic" data-modal="p2">Details</button>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project glass card tilt reveal">
+          <div class="project-top">
+            <div class="badge">Vision • CIFAR-10</div>
+            <h3>Object Detection (CIFAR-10)</h3>
+            <p>
+              Built an object detection pipeline using the <b>CIFAR-10 dataset</b>
+              to classify and detect objects.
+            </p>
+          </div>
+          <div class="project-points">
+            <div><span>🖼️</span> Dataset-driven training workflow</div>
+            <div><span>⚙️</span> Computer vision preprocessing & evaluation</div>
+            <div><span>🚀</span> Deployable model structure</div>
+          </div>
+          <div class="project-actions">
+            <button class="btn ghost magnetic" data-modal="p3">Details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <h2>Skills</h2>
+        <p>Engineering + analytics stack.</p>
+      </div>
+
+      <div class="grid two">
+        <div class="glass card reveal">
+          <h3>Tech</h3>
+          <div class="skillbar">
+            <div class="label"><span>Arificial Intelligence and Machine Learning</span><span></span></div>
+            <div class="bar"><span data-width="97"></span></div>
+          </div>
+          <div class="skillbar">
+            <div class="label"><span>Data Analytics</span><span></span></div>
+            <div class="bar"><span data-width="97"></span></div>
+          </div>
+          <div class="skillbar">
+            <div class="label"><span>Computer Networks</span><span></span></div>
+            <div class="bar"><span data-width="97"></span></div>
+          </div>
+          <div class="skillbar">
+            <div class="label"><span>Discrete Mathematics</span><span></span></div>
+            <div class="bar"><span data-width="97"></span></div>
+          </div>
+        </div>
+
+        <div class="glass card reveal">
+          <h3>Business Analytics</h3>
+          <div class="chips">
+            <span class="chip">Data-Driven Strategy</span>
+            <span class="chip">Model Evaluation</span>
+            <span class="chip">Insights & Reporting</span>
+            <span class="chip">Automation</span>
+            <span class="chip">Decision Support</span>
+          </div>
+
+          <div class="callout glass">
+            <div class="callout-title">Signature Style</div>
+            <div class="callout-text">
+              Premium UI + measurable outcomes. Modern engineering with business clarity.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="section-head reveal">
+        <h2>Connect</h2>
+        <p>Let’s build something that people remember.</p>
+      </div>
+
+      <div class="grid two">
+        <div class="glass card reveal">
+          <h3>Contact</h3>
+          <div class="contact-row">
+            <div class="icon">📞</div>
+            <div>
+              <div class="muted">Phone</div>
+              <a class="link" href="tel:+919310098474">9310098474</a>
+            </div>
+          </div>
+
+          <div class="contact-row">
+            <div class="icon">👤</div>
+            <div>
+              <div class="muted">Name</div>
+              <div class="link">Priyanshu Pandey</div>
+            </div>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn primary magnetic" href="tel:+919310098474">Call Now</a>
+            <button class="btn ghost magnetic" id="copyBtn">Copy Number</button>
+          </div>
+
+          <div class="toast" id="toast">Copied ✅</div>
+        </div>
+
+        <div class="glass card reveal">
+          <h3>Quick Pitch</h3>
+          <p class="pitch">
+            <b>Computer Science Engineer</b> + <b>MBA Business Analytics</b>.<br/>
+            I ship AI projects like <b>3D hospital navigation + AI healthbot automation</b>,
+            <b>credit card fraud detection</b>, and <b>object detection using CIFAR-10</b>.
+          </p>
+
+          <div class="signature">
+            <div class="sig-line"></div>
+            <div class="sig-text">Built with motion • glass • glow</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Priyanshu Pandey • Next-Gen Portfolio</div>
+      <div class="footer-right">
+        <a href="#home" class="link">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
+
+  <!-- MODALS -->
+  <div class="modal" id="modal">
+    <div class="modal-card glass">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
 
